@@ -1,0 +1,501 @@
+@charset "UTF-8";
+
+/*-----all-----*/
+
+html{
+    font-size: 100%;
+}
+body{
+    font-family: 'Noto Sans TC', 'Klee One', cursive, 'Permanent Marker', cursive, sans-serif;
+    color: #000;
+    background: url("../images/background.png") repeat;
+    background-size: 5%;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    color: #500000;
+    background-color: #fddddd;
+}
+a:active{
+    color: #900000;
+}
+img{
+    max-width: 100%;
+}
+
+/*-----header-----*/
+
+.wrappar{
+    margin: 0 auto;
+    border-bottom: solid 3px #500000;
+    background-color: #FFCD9C;
+}
+.logo{
+    width: 13%;
+}
+.index-logo{
+    margin: 0 auto;
+    width: 22%;
+}
+.logo a:hover{
+    background-color: #FFCD9C;
+}
+.nav{
+    display: flex;
+    list-style: none;
+    margin-top: 1.3vw;
+}
+.nav li{
+    margin-left: 2.5vw;
+    font-weight: 700;
+    font-size: 1.5vw;
+}
+.nav a:hover{
+    background-color: #fff;
+    color: #000;
+}
+.nav a:active{
+    background-color: #000;
+    color: #fff;
+}
+.navheader{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+/*-----main------*/
+
+main{
+    line-height: 1.5;
+}
+.fixed{
+    position: fixed;
+}
+.index-main{
+    line-height: 2;
+}
+.split{ /*article跟aside的flex*/
+    display: flex;
+    justify-content: space-between;
+}
+.center{
+    text-align: center;
+}
+.index-title{
+    font-size: 5vw;
+    font-weight: 700;
+    font-family:'Noto Sans TC', sans-serif;
+    margin-top: 36px;
+}
+.index-intro{
+    font-size: 1.8vw;
+    font-weight: 300;
+    font-family:'Noto Sans TC', sans-serif;
+    margin-top: 20px;
+}
+.index-intro2{
+    font-size: 1.8vw;
+    font-weight: 300;
+    font-family:'Noto Sans TC', sans-serif;
+    margin-top: 15px;
+}
+.godown{
+    font-size: 2vw;
+    margin-top: 30px;
+    font-family: 'Klee One', cursive;
+}
+.subtitle{
+    margin-top: 70px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 3.5vw;
+}
+
+/* article */
+
+article{
+    width: 73%;
+    padding: 7vw 5vw 0 5vw;
+}
+h1{ /*大標題*/
+    font-size: 2.75vw;
+    font-weight: 700;
+}
+.article{
+    margin: 2vw 0;
+    font-size: 1.4vw;
+    font-weight: 300;
+}
+.article h2{ /*小標題*/
+    font-size: 2.2vw;
+    font-weight: 500;
+    color: rgb(70, 70, 70);
+}
+.article h3{ /*標語*/
+    font-size: 1.8vw;
+    font-weight: 300;
+}
+.article p{
+    padding: 1vw 0;
+}
+.article a{
+    color: #70f;
+    font-weight: 400;
+}
+.article a:hover{
+    color: #50a;
+}
+.article a:active{
+    color: #306;
+}
+.article figure{
+    text-align: end;
+    padding: 3vw;
+    color: #306;
+    font-family: 'Klee One';
+    font-size: 1.3vw;
+}
+#modlist{
+    list-style: none;
+    font-size: 1.5vw;
+}
+#modlist img{
+    width: 1.6vw;
+    margin-right: 0.5vw;
+}
+#modlist a{
+    color: #900000;
+}
+#modlist a:hover{
+    color: #500000;
+}
+.column-flex{
+    display: flex;
+    flex-direction: column;
+    padding: 3vw;
+}
+.column-flex img{
+    margin-bottom: 1vw;
+}
+.games h1{
+    margin-bottom: 2vw;
+}
+.games span{
+    font-size: 2vw;
+    font-weight: 500;
+}
+.games img{
+    max-width: 2vw;
+    margin-right: 1vw;
+}
+.U75px{
+    margin-top: 75px;
+}
+.yt-video{
+    height: 18vw;
+    width: 32vw;
+}
+
+/* aside */
+
+aside{
+    width: 23%;
+    padding: 7vw 0 0 2vw;
+    border-left: #500000 3px solid;
+    background-color: #f7f7ff;
+}
+.link{
+    font-family: 'Klee One', cursive;
+    font-size: 2.75vw;
+    font-weight: 700;
+    border-bottom: #0ef solid 3px;
+}
+.links{
+    margin-top: 2vw;
+    font-size: 1.4vw;
+    font-family: 'Klee One', cursive;
+}
+.links img{
+    max-width: 2.8vw;
+    margin-right: 0.75vw;
+}
+.links li{
+    list-style: none;
+    margin-top: 1.2vw;
+}
+
+/* seesee */
+
+.seesee{
+    display: flex;
+    margin-top: 30px;
+}
+.seesee figure{
+    padding: 10px;
+}
+.seesee figcaption{
+    font-size: 2.5vw;
+    font-weight: 700;
+    font-family:'Noto Sans TC', sans-serif;
+    text-align: center;    
+}
+.index-max{
+    padding: 0 20vw;
+}
+
+/* more info */
+
+.moreinfo span{
+    font-size: 2.75vw;
+    font-weight: 700;
+    margin-top: 30px;
+    opacity: 80%;
+}
+.moreinfo img{
+    max-width: 4vw;
+    margin-right: 1vw;
+}
+.moreinfo p{
+    margin: 15px 0 30px 5vw;
+    font-size: 1.6vw;
+    font-weight: 300;
+    line-height: 2.5;
+    opacity: 70%;
+}
+.moreinfo iframe{
+    width: 100%;
+    height: 600px;
+}
+
+
+/* counter */
+
+.counter{
+    margin-right: 20px;
+    text-align: left;
+    font-family: 'Klee One', cursive;
+}
+.counter img{
+    margin-left: 10px;
+}
+
+/*-----footer-----*/
+
+footer{
+    font-family: 'Klee One', cursive;
+    font-size: 0.8vw;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0 40px;
+    background-color: #500000;
+}
+
+/*----------<600px----------*/
+
+@media screen and (max-width: 600px){
+    /*-----header-----*/
+
+    .wrappar{
+        border-bottom: solid 2px #500000;
+    }
+    .index-logo{
+        width: 50%;
+    }
+    .navheader{
+        flex-direction: column;
+    }
+    .logo{
+        width: 50%;
+        margin: 0 auto;
+    }
+    .nav{
+        margin-top: 0;
+        justify-content: center;
+    }
+    .nav li{
+        margin-left: 0vw;
+        font-size: 4.4vw;
+        padding: 0 3vw 1vw;
+    }
+
+    /*-----main------*/
+
+    main{
+        padding: 0 1rem;
+    }
+    .index-title{
+        font-size: 7.2vw;
+        margin-top: 16px;
+        padding: 0;
+    }
+    .index-intro{
+        font-size: 5.4vw;
+    }
+    .index-intro2{
+        padding: 0 5vw;
+        font-size: 5.4vw;
+    }
+    .godown{
+        font-size: 7.2vw;
+        margin-top: 30px;
+    }
+    .subtitle{
+        margin-top: 40px;
+        font-size: 6.4vw;
+    }
+    .split{ /*article跟aside的flex*/
+        flex-direction: column-reverse;
+    }
+    .fixed{ /*不需要固定*/
+        position: relative;
+    }
+
+    /* article */
+
+    article{
+        width: 100%;
+        padding: 5vw 5vw 0 5vw;
+    }
+    h1{ /*大標題*/
+        font-size: 7.2vw;
+    }
+    .article{
+        margin: 3vw 0;
+        font-size: 4.8vw;
+    }
+    .article h2{ /*小標題*/
+        font-size: 6.4vw;
+    }
+    .article h3{ /*標語*/
+        font-size: 5.2vw;
+    }
+    .article p{
+        padding: 4vw 0;
+    }
+    .article figure{
+        padding: 0;
+        font-size: 4vw;
+    }
+    #modlist{
+        font-size: 4vw;
+    }
+    #modlist img{
+        width: 4vw;
+    }
+    #modlist li{
+        line-height: 1.8;
+    }
+    .column-flex{
+        padding: 0;
+    }
+    .games h1{
+        margin-bottom: 3vw;
+    }
+    .games span{
+        font-size: 6.4vw;
+    }
+    .games img{
+        max-width: 6.4vw;
+    }
+    .U75px{ /*75 is too much here*/
+        margin-top: 37px;
+    }
+    .yt-video{
+        height: 45vw;
+        width: 80vw;
+    }
+
+    /* aside */
+
+    aside{
+        width: 100%;
+        border-bottom: #500000 2px solid;
+        border-left: none;
+        padding: 0;
+        background-color: rgba(255, 255, 255, 0);
+        text-align: center;
+    }
+    .link{
+        font-size: 0;
+    }
+    .links{
+        margin: 0 0 4vw;
+        font-size: 4vw;
+        font-family: 'Klee One', cursive;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .links img{
+        max-width: 6vw;
+        margin-right: 0.75vw;
+    }
+    .links li{
+        margin: 0.5vw;
+        padding: 0.5vw;
+        background-color: #f5f5f5;
+        border: solid #000 1px;
+    }
+    .links a:hover{
+        background-color: #f5f5f5;
+        color: #000;
+    }
+    .links a:active{
+        background-color: #999;
+        color: #000;
+    }
+
+    /* seesee */
+
+    .seesee{
+        padding: 0 5vw;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .seesee figcaption{
+        font-size: 5.6vw;
+    }
+    .index-max{
+        padding: 0 2vw;
+    }
+
+    /* more info */
+
+    .moreinfo span{
+        font-size: 5.6vw;
+    }
+    .moreinfo img{
+        max-width: 7vw;
+        margin-right: 1vw;
+        margin-top: 20px;
+    }
+    .moreinfo p{
+        margin: 10px 0 12.5px 9vw;
+        font-size: 4vw;
+    }
+    .moreinfo iframe{
+        width: 100%;
+        height: 650px;
+    }
+    
+    /* counter */
+
+    .counter{
+        font-size: 8px;
+        padding: 5px 0 5px;
+        text-align: right;
+    }
+    .counter img{
+        max-width: 5rem;
+    }
+
+    /*-----footer-----*/
+
+    footer{
+        font-size:xx-small;
+    }
+}
